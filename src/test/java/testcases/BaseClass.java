@@ -1,5 +1,7 @@
 package testcases;
 
+import java.util.List;
+
 import org.testng.annotations.BeforeClass;
 
 import io.restassured.RestAssured;
@@ -17,4 +19,17 @@ public class BaseClass {
 		configReader = new ConfigReader();
 	}
 	
+	//Helper Methods
+	boolean isSortedDesceding( List<Integer> idList)
+	{
+		for(int i = 0 ; i<idList.size()-1 ; i++)
+		{
+			if(idList.get(i)<idList.get(i+1))
+			{
+				return false;
+			}
+		}
+		
+		return true;
+	}
 }
