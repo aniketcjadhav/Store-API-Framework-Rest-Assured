@@ -32,4 +32,17 @@ public class BaseClass {
 		
 		return true;
 	}
+	
+	boolean isSortedAsceding (List<Integer> idList)
+	{
+		for(int i = 0 ; i<idList.size()-1 ; i++)
+		{
+			if(idList.get(i)>idList.get(i+1))
+			{
+				return false;
+			}
+		}
+		
+		return true;
+	}
 }

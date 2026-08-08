@@ -58,7 +58,7 @@ public class ProductTests extends BaseClass{
 		.log().body();
 	}
 	
-	@Test // descending order and validate order by id 
+//	@Test // descending order and validate order by id 
 	public void testGetSortedProducts()    //descending order
 	{
 		Response response = 
@@ -77,6 +77,58 @@ public class ProductTests extends BaseClass{
 		
 		
 	}
+	
+//	@Test
+	public void testGetSortedProductsAsc()
+	{
+		
+		Response response = 
+				given()
+				.pathParam("order", "asc")
+				.when()
+					.get(Routes.GET_PRODUCTS_SORTED)
+				.then()
+				.statusCode(200)
+				.log().body()
+				.extract().response();
+				
+				List<Integer> idList = response.jsonPath().getList("id");
+				
+				assertThat(isSortedAsceding(idList), is(true));
+	}
+	
+//	@Test
+	public void testGetAllCategories()
+	{
+	
+		given()
+		.when()
+			.get(Routes.GET_ALL_CATEGORIES)
+		.then()
+		.statusCode(200)
+		.body("size()", greaterThan(0))
+		.log().body();
+		
+	}
+	
+	@Test
+	public void testGetProductsByCategory()
+	{
+
+		given()
+		.pathParam("category", "electronics")  //"electronics","jewelery","men's clothing","women's clothing"
+		.when()
+			.get(Routes.GET_PRODUCTS_BY_CATEGORY)
+		.then()
+		.statusCode(200)
+		.body("size()", greaterThan(0))
+		.body("category",everyItem(notNullValue()))
+		.body("category",everyItem(equalTo("electronics")))  //use everyItem to check array 
+		.log().body();
+	}
+	
+	
+	
 	
 }
 
