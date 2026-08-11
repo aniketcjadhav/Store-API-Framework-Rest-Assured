@@ -14,10 +14,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.List;
 
 import routes.Routes;
+import utils.ConfigReader;
 
 public class ProductTests extends BaseClass{
 
-//	@Test
+	@Test
 	public void testGetAllProducts() {
 		
 		given()
@@ -30,7 +31,7 @@ public class ProductTests extends BaseClass{
 		
 	}
 	
-//	@Test
+	@Test
 	public void testGetSingleProductById()
 	{
 		
@@ -46,7 +47,7 @@ public class ProductTests extends BaseClass{
 		.log().body();
 	}
 	
-//	@Test
+	@Test
 	public void testGetLimitedProducts()
 	{
 		int limit = 3;
@@ -61,7 +62,7 @@ public class ProductTests extends BaseClass{
 		.log().body();
 	}
 	
-//	@Test // descending order and validate order by id 
+	@Test // descending order and validate order by id 
 	public void testGetSortedProducts()    //descending order
 	{
 		Response response = 
@@ -81,7 +82,7 @@ public class ProductTests extends BaseClass{
 		
 	}
 	
-//	@Test
+	@Test
 	public void testGetSortedProductsAsc()
 	{
 		
@@ -100,7 +101,7 @@ public class ProductTests extends BaseClass{
 				assertThat(isSortedAsceding(idList), is(true));
 	}
 	
-//	@Test
+	@Test
 	public void testGetAllCategories()
 	{
 	
@@ -114,7 +115,7 @@ public class ProductTests extends BaseClass{
 		
 	}
 	
-//	@Test
+	@Test
 	public void testGetProductsByCategory()
 	{
 
@@ -149,6 +150,43 @@ public class ProductTests extends BaseClass{
 		
 		
 	}
+	
+	@Test
+	public void testUpdateProduct()
+	{
+		int id = configReader.getIntProperty("productId");
+	
+		Product updatedProductDetails = Payload.productPayload();
+		
+		given()
+		.contentType(ContentType.JSON)
+		.pathParam("id", id)
+		.body(updatedProductDetails)
+		.when()
+			.put(Routes.UPDATE_PRODUCT)
+		.then()
+		.statusCode(200)
+		.log().body()
+		.body("title", equalTo(updatedProductDetails.getTitle()))
+		.body("id", is(id));
+		
+	}
+	
+	@Test
+	public void testDeleteProduct()
+	{
+		int id = configReader.getIntProperty("productId");
+		
+		given()
+		.pathParam("id", id)
+		.when()
+			.delete(Routes.DELETE_PRODUCT)
+		.then()
+		.statusCode(200)
+		.log().body();
+		
+	}
+
 	
 	
 }
