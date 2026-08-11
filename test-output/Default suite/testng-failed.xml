@@ -5,7 +5,16 @@
     <classes>
       <class name="testcases.ProductTests">
         <methods>
+          <include name="testGetSingleProductById"/>
+          <include name="testAddNewProduct"/>
+          <include name="testGetProductsByCategory"/>
+          <include name="testDeleteProduct"/>
           <include name="testUpdateProduct"/>
+          <include name="testGetLimitedProducts"/>
+          <include name="testGetSortedProductsAsc"/>
+          <include name="testGetSortedProducts"/>
+          <include name="testGetAllCategories"/>
+          <include name="testGetAllProducts"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.ProductTests -->
