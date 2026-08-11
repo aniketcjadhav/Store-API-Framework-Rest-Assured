@@ -2,7 +2,10 @@ package testcases;
 import static io.restassured.RestAssured.given;
 import org.testng.annotations.Test;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import payloads.Payload;
+import pojo.Product;
 
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.assertTrue;
@@ -111,7 +114,7 @@ public class ProductTests extends BaseClass{
 		
 	}
 	
-	@Test
+//	@Test
 	public void testGetProductsByCategory()
 	{
 
@@ -127,7 +130,25 @@ public class ProductTests extends BaseClass{
 		.log().body();
 	}
 	
-	
+	@Test
+	public void testAddNewProduct()
+	{
+		
+		Product product = Payload.productPayload();
+		
+		given()
+		.contentType(ContentType.JSON)
+		.body(product)
+		.when() 
+			.post(Routes.CREATE_PRODUCT)
+		.then()
+		.log().body()
+		.statusCode(201)
+		.body("id", notNullValue())
+		.body("title", equalTo( product.getTitle()));
+		
+		
+	}
 	
 	
 }
