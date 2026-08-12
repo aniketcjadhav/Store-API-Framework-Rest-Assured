@@ -3,21 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.ProductTests">
+      <class name="testcases.ProductDataDrivenTest">
         <methods>
-          <include name="testGetSingleProductById"/>
-          <include name="testAddNewProduct"/>
-          <include name="testGetProductsByCategory"/>
-          <include name="testDeleteProduct"/>
-          <include name="testUpdateProduct"/>
-          <include name="testGetLimitedProducts"/>
-          <include name="testGetSortedProductsAsc"/>
-          <include name="testGetSortedProducts"/>
-          <include name="testGetAllCategories"/>
-          <include name="testGetAllProducts"/>
+          <include name="testAddNewProduct" invocation-numbers="0 1 2 3 4"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.ProductTests -->
+      </class> <!-- testcases.ProductDataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
