@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-12T19:51:05 IST" name="Default suite" finished-at="2026-08-12T19:51:10 IST" duration-ms="5019">
+  <suite started-at="2026-08-13T23:26:20 IST" name="API Suite" finished-at="2026-08-13T23:26:24 IST" duration-ms="3850">
     <groups>
     </groups>
-    <test started-at="2026-08-12T19:51:05 IST" name="Default test" finished-at="2026-08-12T19:51:10 IST" duration-ms="5019">
+    <test started-at="2026-08-13T23:26:20 IST" name="Test" finished-at="2026-08-13T23:26:24 IST" duration-ms="3850">
       <class name="testcases.ProductDataDrivenTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDataDrivenTest@66ea810]" started-at="2026-08-12T19:51:05 IST" name="setUp" finished-at="2026-08-12T19:51:06 IST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:21 IST" name="setUp" finished-at="2026-08-13T23:26:21 IST" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@66ea810]" started-at="2026-08-12T19:51:06 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-12T19:51:08 IST" duration-ms="1994" status="PASS">
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:21 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:22 IST" duration-ms="1479" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@66ea810]" started-at="2026-08-12T19:51:08 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-12T19:51:08 IST" duration-ms="668" status="PASS">
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:22 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:23 IST" duration-ms="445" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@66ea810]" started-at="2026-08-12T19:51:08 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-12T19:51:09 IST" duration-ms="508" status="PASS">
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:23 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:23 IST" duration-ms="486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@66ea810]" started-at="2026-08-12T19:51:09 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-12T19:51:10 IST" duration-ms="588" status="PASS">
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:23 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:24 IST" duration-ms="457" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@66ea810]" started-at="2026-08-12T19:51:10 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-12T19:51:10 IST" duration-ms="629" status="PASS">
+        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:24 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:24 IST" duration-ms="472" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,6 +67,6 @@
           </reporter-output>
         </test-method> <!-- testAddNewProduct -->
       </class> <!-- testcases.ProductDataDrivenTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- API Suite -->
 </testng-results>
