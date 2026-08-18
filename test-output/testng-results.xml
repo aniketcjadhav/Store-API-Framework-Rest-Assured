@@ -1,72 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-13T23:26:20 IST" name="API Suite" finished-at="2026-08-13T23:26:24 IST" duration-ms="3850">
+  <suite started-at="2026-08-18T23:49:44 IST" name="Default suite" finished-at="2026-08-18T23:49:47 IST" duration-ms="2691">
     <groups>
     </groups>
-    <test started-at="2026-08-13T23:26:20 IST" name="Test" finished-at="2026-08-13T23:26:24 IST" duration-ms="3850">
-      <class name="testcases.ProductDataDrivenTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:21 IST" name="setUp" finished-at="2026-08-13T23:26:21 IST" duration-ms="195" status="PASS">
+    <test started-at="2026-08-18T23:49:44 IST" name="Default test" finished-at="2026-08-18T23:49:47 IST" duration-ms="2691">
+      <class name="testcases.UserTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.UserTests@66ea810]" started-at="2026-08-18T23:49:44 IST" name="setUp" finished-at="2026-08-18T23:49:45 IST" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:21 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:22 IST" duration-ms="1479" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Wireless Mouse, price=25.99, description=Ergonomic wireless mouse with adjustable DPI., image=https://i.pravatar.cc/100, category=electronic}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testGetAllUsers()[pri:0, instance:testcases.UserTests@66ea810]" started-at="2026-08-18T23:49:45 IST" name="testGetAllUsers" finished-at="2026-08-18T23:49:47 IST" duration-ms="2347" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:22 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:23 IST" duration-ms="445" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Gaming Keyboard, price=49.99, description=Mechanical gaming keyboard with RGB backlight., image=https://i.pravatar.cc/101, category=electronic}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:23 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:23 IST" duration-ms="486" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Bluetooth Headphones, price=79.99, description=Noise-canceling over-ear headphones with deep bass., image=https://i.pravatar.cc/102, category=electronics}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:23 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:24 IST" duration-ms="457" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Smart Watch, price=129.99, description=Fitness smartwatch with heart rate monitor and GPS., image=https://i.pravatar.cc/103, category=wearables}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@6cd24612]" started-at="2026-08-13T23:26:24 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2026-08-13T23:26:24 IST" duration-ms="472" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Portable Speaker, price=39.99, description=Waterproof Bluetooth speaker with 12-hour battery life., image=https://i.pravatar.cc/104, category=audio}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-      </class> <!-- testcases.ProductDataDrivenTest -->
-    </test> <!-- Test -->
-  </suite> <!-- API Suite -->
+        </test-method> <!-- testGetAllUsers -->
+      </class> <!-- testcases.UserTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

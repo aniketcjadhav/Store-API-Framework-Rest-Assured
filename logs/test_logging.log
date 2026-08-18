@@ -1,205 +1,249 @@
-Request method:	POST
-Request URI:	https://fakestoreapi.com/products
+Request method:	GET
+Request URI:	https://fakestoreapi.com/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "title": "Wireless Mouse",
-    "price": 25.99,
-    "description": "Ergonomic wireless mouse with adjustable DPI.",
-    "categoery": "electronic",
-    "image": "https://i.pravatar.cc/100"
-}
-HTTP/1.1 201 Created
-Date: Thu, 13 Aug 2026 17:56:22 GMT
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 18 Aug 2026 18:19:47 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 146
+Transfer-Encoding: chunked
 Connection: keep-alive
 access-control-allow-origin: *
-etag: W/"92-rjxVfnp5Jv5TBHUXFsehiI4urPk"
+etag: W/"bae-Vi0JNVg0EAD6LcGk4v18ASK0bgA"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Ujh6YrHSYpNAg%2Fj3JW7xrNdIxotGttLvtUH2zj4YUGPOUFvP%2FICyJUtl25XBiBAAzZBOb4CvgxF2PVi12f5RAWMwuNXZkaRYKcdpAAhZKS9dfzMy3QI5idGFNdZGpFsgOksy"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5rbmNaZs8jNub4Xoo4NXZtmqenZkbnq%2FKnOAH88m6q%2BEPJfVaXNAIrPzzP9KbfhK4G22yU74%2BwiSQ0W5eB9PeZV4Ws%2BOdfOQnXk9R4HQ6a%2F5obSzM3ZrX%2B9KRX%2FSrZbUzsxM"}]}
+Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: a2a998989cbac8e8-MRS
+CF-RAY: a2d2edc36c33e210-MRS
 alt-svc: h3=":443"; ma=86400
 
-{
-    "id": 21,
-    "title": "Wireless Mouse",
-    "price": 25.99,
-    "description": "Ergonomic wireless mouse with adjustable DPI.",
-    "image": "https://i.pravatar.cc/100"
-}
-Request method:	POST
-Request URI:	https://fakestoreapi.com/products
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "title": "Gaming Keyboard",
-    "price": 49.99,
-    "description": "Mechanical gaming keyboard with RGB backlight.",
-    "categoery": "electronic",
-    "image": "https://i.pravatar.cc/101"
-}
-HTTP/1.1 201 Created
-Date: Thu, 13 Aug 2026 17:56:23 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 148
-Connection: keep-alive
-access-control-allow-origin: *
-etag: W/"94-6BOVD/KllHwHF4Ztxs/zjw8vvUs"
-x-powered-by: Express
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xrWYS54kq6kUAmvVB%2BO32AghRYgPA3HeEbsJV1md8XGaufo837prn%2Bj8STCesqiFHMOhExzFY2unf1mtJSqCAQ6y1%2B3vVTX7Q1A%2BKVrU6pkEZ%2Flm%2BniIUboiPQxiMzqWZ%2Fkv"}]}
-Server: cloudflare
-CF-RAY: a2a9989bec7653a8-MRS
-alt-svc: h3=":443"; ma=86400
-
-{
-    "id": 21,
-    "title": "Gaming Keyboard",
-    "price": 49.99,
-    "description": "Mechanical gaming keyboard with RGB backlight.",
-    "image": "https://i.pravatar.cc/101"
-}
-Request method:	POST
-Request URI:	https://fakestoreapi.com/products
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "title": "Bluetooth Headphones",
-    "price": 79.99,
-    "description": "Noise-canceling over-ear headphones with deep bass.",
-    "categoery": "electronics",
-    "image": "https://i.pravatar.cc/102"
-}
-HTTP/1.1 201 Created
-Date: Thu, 13 Aug 2026 17:56:23 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 158
-Connection: keep-alive
-access-control-allow-origin: *
-etag: W/"9e-b7tPALlPi6elaGFxjcNOV8AeQGY"
-x-powered-by: Express
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NkCnM8R%2BggKfOvPq0IrjNTTY1HPezRcaKWsHypHnY%2Fl7ySuvSRlgKx506ewLHVdEgvCrK%2BpHzjOkep95T4CjcFRJtiB8aa5FfA11YvlzxapQhDxsjPRyH9q1sFqR6wzeQr57"}]}
-Server: cloudflare
-CF-RAY: a2a9989eeaee2d58-MRS
-alt-svc: h3=":443"; ma=86400
-
-{
-    "id": 21,
-    "title": "Bluetooth Headphones",
-    "price": 79.99,
-    "description": "Noise-canceling over-ear headphones with deep bass.",
-    "image": "https://i.pravatar.cc/102"
-}
-Request method:	POST
-Request URI:	https://fakestoreapi.com/products
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "title": "Smart Watch",
-    "price": 129.99,
-    "description": "Fitness smartwatch with heart rate monitor and GPS.",
-    "categoery": "wearables",
-    "image": "https://i.pravatar.cc/103"
-}
-HTTP/1.1 201 Created
-Date: Thu, 13 Aug 2026 17:56:24 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 150
-Connection: keep-alive
-access-control-allow-origin: *
-etag: W/"96-eoT1mBwm/xJRkc1BEPF2LNwafKM"
-x-powered-by: Express
-cf-cache-status: DYNAMIC
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=G6TYIhMTRJEbw5Ubs5w8MQjwQ3t8Yk2rztn%2FBi5cX9BgqWe%2FdCuOrT5kkDAh%2BpIaY4fSobO2UH65zP18f1vdDsL6u0u%2F6GVkBGLpJlKSc2%2BMyDTT2B72S9mpdBneaBPHmRdO"}]}
-Server: cloudflare
-CF-RAY: a2a998a1da473ee8-MRS
-alt-svc: h3=":443"; ma=86400
-
-{
-    "id": 21,
-    "title": "Smart Watch",
-    "price": 129.99,
-    "description": "Fitness smartwatch with heart rate monitor and GPS.",
-    "image": "https://i.pravatar.cc/103"
-}
-Request method:	POST
-Request URI:	https://fakestoreapi.com/products
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "title": "Portable Speaker",
-    "price": 39.99,
-    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
-    "categoery": "audio",
-    "image": "https://i.pravatar.cc/104"
-}
-HTTP/1.1 201 Created
-Date: Thu, 13 Aug 2026 17:56:24 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 158
-Connection: keep-alive
-access-control-allow-origin: *
-etag: W/"9e-8lfp8bPrF/DlbdNBJTywX7ETqdY"
-x-powered-by: Express
-cf-cache-status: DYNAMIC
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Du%2FT4MouPUUUebHs4NLimLp7ppB2C9Nkd17GEYGcer5WSmWTWTl%2B%2FykAPuVXZvxbfWNzPnDtuD2lkgGUKrW8fsspZip7nRIadpBNWwpOpXeC4dEMAk0QxR2WPV9kwzZtpYjF"}]}
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Server: cloudflare
-CF-RAY: a2a998a4d886cdbb-MRS
-alt-svc: h3=":443"; ma=86400
-
-{
-    "id": 21,
-    "title": "Portable Speaker",
-    "price": 39.99,
-    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
-    "image": "https://i.pravatar.cc/104"
-}
+[
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3467",
+                "long": "-20.1310"
+            },
+            "city": "San Antonio",
+            "street": "Hunters Creek Dr",
+            "number": 6454,
+            "zipcode": "98234-1734"
+        },
+        "id": 4,
+        "email": "don@gmail.com",
+        "username": "donero",
+        "password": "ewedon",
+        "name": {
+            "firstname": "don",
+            "lastname": "romer"
+        },
+        "phone": "1-765-789-6734",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-40.1310"
+            },
+            "city": "san Antonio",
+            "street": "adams St",
+            "number": 245,
+            "zipcode": "80796-1234"
+        },
+        "id": 5,
+        "email": "derek@gmail.com",
+        "username": "derek",
+        "password": "jklg*_56",
+        "name": {
+            "firstname": "derek",
+            "lastname": "powell"
+        },
+        "phone": "1-956-001-1945",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "20.1677",
+                "long": "-10.6789"
+            },
+            "city": "el paso",
+            "street": "prospect st",
+            "number": 124,
+            "zipcode": "12346-0456"
+        },
+        "id": 6,
+        "email": "david_r@gmail.com",
+        "username": "david_r",
+        "password": "3478*#54",
+        "name": {
+            "firstname": "david",
+            "lastname": "russell"
+        },
+        "phone": "1-678-345-9856",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "10.3456",
+                "long": "20.6419"
+            },
+            "city": "fresno",
+            "street": "saddle st",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 7,
+        "email": "miriam@gmail.com",
+        "username": "snyder",
+        "password": "f238&@*$",
+        "name": {
+            "firstname": "miriam",
+            "lastname": "snyder"
+        },
+        "phone": "1-123-943-0563",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3456",
+                "long": "10.6419"
+            },
+            "city": "mesa",
+            "street": "vally view ln",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 8,
+        "email": "william@gmail.com",
+        "username": "hopkins",
+        "password": "William56$hj",
+        "name": {
+            "firstname": "william",
+            "lastname": "hopkins"
+        },
+        "phone": "1-478-001-0890",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.12456",
+                "long": "20.5419"
+            },
+            "city": "miami",
+            "street": "avondale ave",
+            "number": 345,
+            "zipcode": "96378-0245"
+        },
+        "id": 9,
+        "email": "kate@gmail.com",
+        "username": "kate_h",
+        "password": "kfejk@*_",
+        "name": {
+            "firstname": "kate",
+            "lastname": "hale"
+        },
+        "phone": "1-678-456-1934",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "30.24788",
+                "long": "-20.545419"
+            },
+            "city": "fort wayne",
+            "street": "oak lawn ave",
+            "number": 526,
+            "zipcode": "10256-4532"
+        },
+        "id": 10,
+        "email": "jimmie@gmail.com",
+        "username": "jimmie_k",
+        "password": "klein*#%*",
+        "name": {
+            "firstname": "jimmie",
+            "lastname": "klein"
+        },
+        "phone": "1-104-001-4567",
+        "__v": 0
+    }
+]
