@@ -5,6 +5,13 @@ public class Geolocation {
 	private String lat;
 	private String lng;
 	
+	
+	
+	public Geolocation(String lat, String lng) {
+
+		this.lat = lat;
+		this.lng = lng;
+	}
 	public String getLat() {
 		return lat;
 	}
