@@ -8,7 +8,10 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import payloads.Payload;
+import pojo.User;
 import routes.Routes;
 
 public class UserTests extends BaseClass {
@@ -81,4 +84,80 @@ public class UserTests extends BaseClass {
 		assertThat(isSortedDesceding(list), is(true));
 		
 	}	
+	
+	@Test
+	void testGetUsersSortedAsc()
+	{
+		Response response=given()
+			.pathParam("order", "asc")
+		.when()
+			.get(Routes.GET_USERS_SORTED)
+		.then()
+			.statusCode(200)
+			.extract().response();
+	
+		List<Integer> userIds=response.jsonPath().getList("id", Integer.class);
+		
+		
+		assertThat(isSortedAsceding(userIds), is(true));
+	}
+	
+	@Test
+	public void testCreateUser()
+	{
+		User newUser=Payload.userPayload();
+				
+		int id=given()
+			.contentType(ContentType.JSON)
+			.body(newUser)
+		.when()
+			.post(Routes.CREATE_USER)
+		.then() 
+			.log().body()
+			.statusCode(201)
+			.body("id", notNullValue())
+			.extract().jsonPath().getInt("id");
+		
+		System.out.println("Generated UserID =:"+ id);
+
+	}
+	
+	@Test
+	public void testUpdateUser()
+	{
+		int userId=configReader.getIntProperty("userId");
+		
+		User updateUser=Payload.userPayload();
+				
+		given()
+			.contentType(ContentType.JSON)
+			.pathParam("id", userId)
+			.body(updateUser)
+		.when()
+			.put(Routes.UPDATE_USER)
+		.then() 
+			.log().body()
+			.statusCode(200)
+			.body("username",equalTo(updateUser.getUsername()));
+				
+	}
+	
+
+	
+	@Test
+	void testDeleteUser()
+	{
+
+		int userId=configReader.getIntProperty("userId");
+		
+		given()
+			.pathParam("id", userId)
+		.when()
+			.delete(Routes.DELETE_USER)
+		.then()
+			.statusCode(200);
+		}
+
+
+
 }

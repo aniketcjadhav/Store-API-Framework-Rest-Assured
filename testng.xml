@@ -8,7 +8,7 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcases.ProductDataDrivenTest"/>   
+      <class name="testcases.UserTests"/>   
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

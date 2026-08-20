@@ -5,7 +5,7 @@
     <classes>
       <class name="testcases.UserTests">
         <methods>
-          <include name="testGetUsersWithLimit"/>
+          <include name="testCreateUser"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.UserTests -->
