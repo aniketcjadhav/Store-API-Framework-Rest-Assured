@@ -10,7 +10,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 18 Aug 2026 18:19:47 GMT
+Date: Thu, 20 Aug 2026 18:15:45 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -19,10 +19,10 @@ etag: W/"bae-Vi0JNVg0EAD6LcGk4v18ASK0bgA"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5rbmNaZs8jNub4Xoo4NXZtmqenZkbnq%2FKnOAH88m6q%2BEPJfVaXNAIrPzzP9KbfhK4G22yU74%2BwiSQ0W5eB9PeZV4Ws%2BOdfOQnXk9R4HQ6a%2F5obSzM3ZrX%2B9KRX%2FSrZbUzsxM"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kf2I4KJo2nXKgx%2BnNt9YbsedkN03XszkU8aGpCapQ%2FSv7iEj%2FhuDycFjo20KTHxdsEigVHswye7eRrk2sC1LniqtQb%2FNL8aKjzazyaVIa5hvKyQujkxmXqZAWgMjP%2BS8UzJp"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: a2d2edc36c33e210-MRS
+CF-RAY: a2e3629d3a23f5c5-MRS
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -244,6 +244,304 @@ alt-svc: h3=":443"; ma=86400
             "lastname": "klein"
         },
         "phone": "1-104-001-4567",
+        "__v": 0
+    }
+]
+Request method:	GET
+Request URI:	https://fakestoreapi.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 20 Aug 2026 18:15:47 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=n9v2kYD32XC7XFwp2kloG%2FLaMzcP%2BHCA4s4zDqOa7mPfwp0u7cx1Pnap8UXwV56kmTyEXSWn9WloYBz3W6RxgAaO2AQHaQZ%2FOzcBUI5dmUURBK%2B%2Bg%2BgW2b8Fmt8O55DZ46kQ"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: a2e362a75c4afa41-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "address": {
+        "geolocation": {
+            "lat": "-37.3159",
+            "long": "81.1496"
+        },
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+    },
+    "id": 1,
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+    "name": {
+        "firstname": "john",
+        "lastname": "doe"
+    },
+    "phone": "1-570-236-7033",
+    "__v": 0
+}
+Request method:	GET
+Request URI:	https://fakestoreapi.com/users?sort=desc
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	order=desc
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 20 Aug 2026 18:15:47 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"bae-RmXgfZyGPwU9Dh6EKhIQkuNoVzY"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ojpdgK8fjaed35t1kFnjLK0NM5oZS5EE5%2FhCrJM%2BvbRGb%2BrmR19vkOkI%2FcoBWACUHnIkq97%2FGqgWFV5TkPMQ68GY8a1ABPE2QY9sy30LRsiaVdthmogRFoLTOvDeNiHFiSqc"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: a2e362ab5b5ee1b0-MRS
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "address": {
+            "geolocation": {
+                "lat": "30.24788",
+                "long": "-20.545419"
+            },
+            "city": "fort wayne",
+            "street": "oak lawn ave",
+            "number": 526,
+            "zipcode": "10256-4532"
+        },
+        "id": 10,
+        "email": "jimmie@gmail.com",
+        "username": "jimmie_k",
+        "password": "klein*#%*",
+        "name": {
+            "firstname": "jimmie",
+            "lastname": "klein"
+        },
+        "phone": "1-104-001-4567",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.12456",
+                "long": "20.5419"
+            },
+            "city": "miami",
+            "street": "avondale ave",
+            "number": 345,
+            "zipcode": "96378-0245"
+        },
+        "id": 9,
+        "email": "kate@gmail.com",
+        "username": "kate_h",
+        "password": "kfejk@*_",
+        "name": {
+            "firstname": "kate",
+            "lastname": "hale"
+        },
+        "phone": "1-678-456-1934",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3456",
+                "long": "10.6419"
+            },
+            "city": "mesa",
+            "street": "vally view ln",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 8,
+        "email": "william@gmail.com",
+        "username": "hopkins",
+        "password": "William56$hj",
+        "name": {
+            "firstname": "william",
+            "lastname": "hopkins"
+        },
+        "phone": "1-478-001-0890",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "10.3456",
+                "long": "20.6419"
+            },
+            "city": "fresno",
+            "street": "saddle st",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 7,
+        "email": "miriam@gmail.com",
+        "username": "snyder",
+        "password": "f238&@*$",
+        "name": {
+            "firstname": "miriam",
+            "lastname": "snyder"
+        },
+        "phone": "1-123-943-0563",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "20.1677",
+                "long": "-10.6789"
+            },
+            "city": "el paso",
+            "street": "prospect st",
+            "number": 124,
+            "zipcode": "12346-0456"
+        },
+        "id": 6,
+        "email": "david_r@gmail.com",
+        "username": "david_r",
+        "password": "3478*#54",
+        "name": {
+            "firstname": "david",
+            "lastname": "russell"
+        },
+        "phone": "1-678-345-9856",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-40.1310"
+            },
+            "city": "san Antonio",
+            "street": "adams St",
+            "number": 245,
+            "zipcode": "80796-1234"
+        },
+        "id": 5,
+        "email": "derek@gmail.com",
+        "username": "derek",
+        "password": "jklg*_56",
+        "name": {
+            "firstname": "derek",
+            "lastname": "powell"
+        },
+        "phone": "1-956-001-1945",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3467",
+                "long": "-20.1310"
+            },
+            "city": "San Antonio",
+            "street": "Hunters Creek Dr",
+            "number": 6454,
+            "zipcode": "98234-1734"
+        },
+        "id": 4,
+        "email": "don@gmail.com",
+        "username": "donero",
+        "password": "ewedon",
+        "name": {
+            "firstname": "don",
+            "lastname": "romer"
+        },
+        "phone": "1-765-789-6734",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
         "__v": 0
     }
 ]

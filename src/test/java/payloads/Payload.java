@@ -29,7 +29,7 @@ public class Payload {
 		return new Product(title,price, description, categoery, imageUrl);
 	}
 	
-	//Cart
+	//User
 	
 	public static User userPayload()
 	{
@@ -57,7 +57,7 @@ public class Payload {
 		return new User(email,username,password,name,address,phone);
 	}
 	
-	//User
+	
 	
 	//Login
 }
