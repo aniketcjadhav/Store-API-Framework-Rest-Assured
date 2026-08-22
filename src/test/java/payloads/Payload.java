@@ -1,10 +1,16 @@
 package payloads;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import com.github.javafaker.Faker;
 
 import pojo.Address;
+import pojo.Cart;
+import pojo.CartProduct;
 import pojo.Geolocation;
 import pojo.Name;
 import pojo.Product;
@@ -57,6 +63,34 @@ public class Payload {
 		return new User(email,username,password,name,address,phone);
 	}
 	
+	//Cart
+	public static Cart cartPayload(int userId)
+	{
+		/*
+		 *private int userId;
+	private String date;
+	List<CartProduct> products; 
+		 * */
+		
+		
+		List<CartProduct> products = new ArrayList<>();
+		
+		int productSize = random.nextInt(4);
+		
+		for(int i =1;i==productSize;i++)
+		{	
+			int productId = random.nextInt(100);
+			int quantity =random.nextInt(10)+1;
+			products.add(new CartProduct(productId ,quantity ));
+		}
+		
+		LocalDate localdate = LocalDate.now();
+		DateTimeFormatter formate = DateTimeFormatter.ofPattern("yyyyMMdd");
+		String date = localdate.format(formate);
+		
+		return new Cart(userId ,date ,products);
+		
+	}
 	
 	
 	//Login
