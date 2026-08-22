@@ -77,7 +77,7 @@ public class Payload {
 		
 		int productSize = random.nextInt(4);
 		
-		for(int i =1;i==productSize;i++)
+		for(int i =1;i<=productSize;i++)
 		{	
 			int productId = random.nextInt(100);
 			int quantity =random.nextInt(10)+1;
