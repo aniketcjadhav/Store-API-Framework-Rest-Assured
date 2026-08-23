@@ -90,4 +90,108 @@ public class CartTests extends BaseClass{
             .then()
                 .statusCode(200); // Validate that the response status code is 204 (No Content)
     }
+    
+    @Test
+    public void testGetCartById() {
+    	
+    	int cartId = configReader.getIntProperty("cartId");
+    	
+    	given()
+    	.pathParam("id", cartId)
+    	.when()
+    		.get(Routes.GET_CART_BY_ID)
+    	.then()
+    		.statusCode(200)
+    		.log().body()
+    		.body("userId", equalTo(cartId));
+    	
+    }
+    
+	@Test
+    public void testGetCartsByDateRange() {
+     
+    	 String startDate = configReader.getProperty("startdate");
+    	 String endDate = configReader.getProperty("enddate");
+    	    
+        Response response=given()
+            .pathParam("startdate", startDate)
+            .pathParam("enddate", endDate)
+            .when()
+                .get(Routes.GET_CARTS_BY_DATE_RANGE)
+            .then()
+                .statusCode(200)
+                .log().body()
+                .body("size()", greaterThan(0)) 
+                .extract().response();
+        
+     // Extract the list of cart dates
+        List<String> cartDates = response.jsonPath().getList("date");
+
+        
+        assertThat(validateCartDatesWithinRange(cartDates, startDate, endDate), is(true));
+        
+    }
+	
+	 @Test
+	    public void testGetUserCart() {
+	        int userId = configReader.getIntProperty("userId");
+	        
+	        given()
+	            .pathParam("userId", userId)
+	        .when()
+	            .get(Routes.GET_USER_CART)
+	        .then()
+	        	.statusCode(200)
+	        	.log().body()
+	            .body("userId", everyItem(equalTo(userId))); // Validate that the response contains the correct user ID
+	    }
+
+	 
+	 @Test
+	    public void testGetCartsWithLimit() {
+	        int limit = configReader.getIntProperty("limit");
+	        given()
+	            .pathParam("limit", limit)
+	        .when()
+	            .get(Routes.GET_CARTS_WITH_LIMIT)
+	        .then()
+	            .statusCode(200)
+	            .body("size()", lessThanOrEqualTo(limit)); // Validate that the response size is within the limit
+	    }
+
+	 @Test
+	    public void testGetCartsSorted() {
+	    	Response response = given()
+	            .pathParam("order", "desc")
+	            .when()
+	                .get(Routes.GET_CARTS_SORTED)
+	            .then()
+	                .statusCode(200)
+	                .body("size()", greaterThan(0)) 
+	                .extract().response();
+	         
+	        
+	         List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+
+	         assertThat(isSortedDesceding(cartIds), is(true));
+	    }  
+	    
+	   @Test
+	    public void testGetCartsSortedAsc() {
+	    	Response response = given()
+	            .pathParam("order", "asc")
+	            .when()
+	                .get(Routes.GET_CARTS_SORTED)
+	            .then()
+	                .statusCode(200)
+	                .body("size()", greaterThan(0)) 
+	                .extract().response();
+	         
+	       
+	         List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+
+	         assertThat(isSortedAsceding(cartIds), is(true));
+	    }  
+	    
+
 }

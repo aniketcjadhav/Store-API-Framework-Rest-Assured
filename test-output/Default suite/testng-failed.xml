@@ -5,7 +5,7 @@
     <classes>
       <class name="testcases.CartTests">
         <methods>
-          <include name="testUpdateCart"/>
+          <include name="testCreateCart"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.CartTests -->

@@ -3,6 +3,8 @@ package testcases;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.testng.annotations.BeforeClass;
@@ -19,6 +21,7 @@ public class BaseClass {
 	
 	RequestLoggingFilter requestLoggingFilter;
 	ResponseLoggingFilter responseLoggingFilter;
+	public static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 	
 	@BeforeClass
@@ -63,6 +66,23 @@ public class BaseClass {
 			}
 		}
 		
+		return true;
+	}
+	
+	boolean validateCartDatesWithinRange(List<String> cartDates,String startDate,String endDate)
+	{
+		LocalDate start = LocalDate.parse(startDate,formatter);
+
+		LocalDate end = LocalDate.parse(endDate,formatter);
+		
+		for(String cartDate : cartDates)
+		{
+			LocalDate cart = LocalDate.parse(cartDate.substring(0, 10),formatter);
+			if(cart.isBefore(start)|| cart.isAfter(end))
+			{
+				return false;
+			}
+		}
 		return true;
 	}
 }
