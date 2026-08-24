@@ -12,6 +12,7 @@ import pojo.Address;
 import pojo.Cart;
 import pojo.CartProduct;
 import pojo.Geolocation;
+import pojo.Login;
 import pojo.Name;
 import pojo.Product;
 import pojo.User;
@@ -94,4 +95,12 @@ public class Payload {
 	
 	
 	//Login
+	
+	public static Login loginPayload()
+	{
+		String username = faker.name().username();
+		String password = faker.internet().password();
+		
+		return new Login(username, password);
+	}
 }
