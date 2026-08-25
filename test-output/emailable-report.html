@@ -8,50 +8,71 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">API Suite</th></tr>
-<tr><td><a href="#t0">Product Data Driven Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,841</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">UserTest</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,256</td><td></td><td></td></tr>
-<tr><td><a href="#t2">ProductTest</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,641</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">Cart Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,523</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">33</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">24,261</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,837</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">API Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Product Data Driven Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">testcases.ProductDataDrivenTest</td><td><a href="#m0">testAddNewProduct</a></td><td rowspan="5">1787483365871</td><td rowspan="5">1322</td></tr><tr class="passedeven"><td><a href="#m1">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m2">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m3">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m4">testAddNewProduct</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">UserTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">testcases.UserTests</td><td><a href="#m5">testCreateUser</a></td><td rowspan="1">1787483365676</td><td rowspan="1">1905</td></tr><tr class="passedeven"><td><a href="#m6">testDeleteUser</a></td><td rowspan="1">1787483367583</td><td rowspan="1">588</td></tr><tr class="passedeven"><td><a href="#m7">testGetAllUsers</a></td><td rowspan="1">1787483368173</td><td rowspan="1">588</td></tr><tr class="passedeven"><td><a href="#m8">testGetUserById</a></td><td rowspan="1">1787483368763</td><td rowspan="1">557</td></tr><tr class="passedeven"><td><a href="#m9">testGetUsersSorted</a></td><td rowspan="1">1787483369322</td><td rowspan="1">576</td></tr><tr class="passedeven"><td><a href="#m10">testGetUsersSortedAsc</a></td><td rowspan="1">1787483369901</td><td rowspan="1">577</td></tr><tr class="passedeven"><td><a href="#m11">testGetUsersWithLimit</a></td><td rowspan="1">1787483370483</td><td rowspan="1">560</td></tr><tr class="passedeven"><td><a href="#m12">testUpdateUser</a></td><td rowspan="1">1787483371044</td><td rowspan="1">525</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">ProductTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">testcases.ProductTests</td><td><a href="#m13">testAddNewProduct</a></td><td rowspan="1">1787483365676</td><td rowspan="1">1893</td></tr><tr class="passedeven"><td><a href="#m14">testDeleteProduct</a></td><td rowspan="1">1787483367575</td><td rowspan="1">490</td></tr><tr class="passedeven"><td><a href="#m15">testGetAllCategories</a></td><td rowspan="1">1787483368068</td><td rowspan="1">499</td></tr><tr class="passedeven"><td><a href="#m16">testGetAllProducts</a></td><td rowspan="1">1787483368569</td><td rowspan="1">470</td></tr><tr class="passedeven"><td><a href="#m17">testGetLimitedProducts</a></td><td rowspan="1">1787483369042</td><td rowspan="1">472</td></tr><tr class="passedeven"><td><a href="#m18">testGetProductsByCategory</a></td><td rowspan="1">1787483369518</td><td rowspan="1">481</td></tr><tr class="passedeven"><td><a href="#m19">testGetSingleProductById</a></td><td rowspan="1">1787483370001</td><td rowspan="1">474</td></tr><tr class="passedeven"><td><a href="#m20">testGetSortedProducts</a></td><td rowspan="1">1787483370479</td><td rowspan="1">488</td></tr><tr class="passedeven"><td><a href="#m21">testGetSortedProductsAsc</a></td><td rowspan="1">1787483370969</td><td rowspan="1">482</td></tr><tr class="passedeven"><td><a href="#m22">testUpdateProduct</a></td><td rowspan="1">1787483371452</td><td rowspan="1">501</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">Cart Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">testcases.CartTests</td><td><a href="#m23">testCreateCart</a></td><td rowspan="1">1787483365676</td><td rowspan="1">1915</td></tr><tr class="passedeven"><td><a href="#m24">testDeleteCart</a></td><td rowspan="1">1787483367594</td><td rowspan="1">579</td></tr><tr class="passedeven"><td><a href="#m25">testGetAllCarts</a></td><td rowspan="1">1787483368175</td><td rowspan="1">586</td></tr><tr class="passedeven"><td><a href="#m26">testGetCartById</a></td><td rowspan="1">1787483368766</td><td rowspan="1">568</td></tr><tr class="passedeven"><td><a href="#m27">testGetCartsByDateRange</a></td><td rowspan="1">1787483369336</td><td rowspan="1">587</td></tr><tr class="passedeven"><td><a href="#m28">testGetCartsSorted</a></td><td rowspan="1">1787483369925</td><td rowspan="1">577</td></tr><tr class="passedeven"><td><a href="#m29">testGetCartsSortedAsc</a></td><td rowspan="1">1787483370504</td><td rowspan="1">588</td></tr><tr class="passedeven"><td><a href="#m30">testGetCartsWithLimit</a></td><td rowspan="1">1787483371094</td><td rowspan="1">609</td></tr><tr class="passedeven"><td><a href="#m31">testGetUserCart</a></td><td rowspan="1">1787483371705</td><td rowspan="1">611</td></tr><tr class="passedeven"><td><a href="#m32">testUpdateCart</a></td><td rowspan="1">1787483372320</td><td rowspan="1">513</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.LoginTests</td><td><a href="#m0">testValidUserLogin</a></td><td rowspan="1">1787680678353</td><td rowspan="1">1566</td></tr></tbody>
 </table>
-<h2>Product Data Driven Test</h2><h3 id="m0">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Wireless Mouse, price=25.99, description=Ergonomic wireless mouse with adjustable DPI., image=https://i.pravatar.cc/100, category=electronic}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Gaming Keyboard, price=49.99, description=Mechanical gaming keyboard with RGB backlight., image=https://i.pravatar.cc/101, category=electronic}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Bluetooth Headphones, price=79.99, description=Noise-canceling over-ear headphones with deep bass., image=https://i.pravatar.cc/102, category=electronics}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Portable Speaker, price=39.99, description=Waterproof Bluetooth speaker with 12-hour battery life., image=https://i.pravatar.cc/104, category=audio}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Smart Watch, price=129.99, description=Fitness smartwatch with heart rate monitor and GPS., image=https://i.pravatar.cc/103, category=wearables}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>UserTest</h2><h3 id="m5">testcases.UserTests#testCreateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testcases.UserTests#testDeleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testcases.UserTests#testGetAllUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testcases.UserTests#testGetUserById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testcases.UserTests#testGetUsersSorted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">testcases.UserTests#testGetUsersSortedAsc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">testcases.UserTests#testGetUsersWithLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">testcases.UserTests#testUpdateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ProductTest</h2><h3 id="m13">testcases.ProductTests#testAddNewProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">testcases.ProductTests#testDeleteProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">testcases.ProductTests#testGetAllCategories</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">testcases.ProductTests#testGetAllProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">testcases.ProductTests#testGetLimitedProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">testcases.ProductTests#testGetProductsByCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">testcases.ProductTests#testGetSingleProductById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">testcases.ProductTests#testGetSortedProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m21">testcases.ProductTests#testGetSortedProductsAsc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m22">testcases.ProductTests#testUpdateProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Cart Test</h2><h3 id="m23">testcases.CartTests#testCreateCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m24">testcases.CartTests#testDeleteCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m25">testcases.CartTests#testGetAllCarts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m26">testcases.CartTests#testGetCartById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m27">testcases.CartTests#testGetCartsByDateRange</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m28">testcases.CartTests#testGetCartsSorted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m29">testcases.CartTests#testGetCartsSortedAsc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m30">testcases.CartTests#testGetCartsWithLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m31">testcases.CartTests#testGetUserCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m32">testcases.CartTests#testUpdateCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">testcases.LoginTests#testValidUserLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;400&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at testcases.LoginTests.testValidUserLogin(LoginTests.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

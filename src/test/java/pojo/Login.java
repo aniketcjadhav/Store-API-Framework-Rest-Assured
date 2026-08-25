@@ -2,24 +2,24 @@ package pojo;
 
 public class Login {
 
-	private String userName;
+	private String username;
 	private String password;
 	
 	
-	public Login(String userName, String password) {
+	public Login(String username, String password) {
 	
-		this.userName = userName;
+		this.username = username;
 		this.password = password;
 	}
 
 
 	public String getUserName() {
-		return userName;
+		return username;
 	}
 
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 
 
